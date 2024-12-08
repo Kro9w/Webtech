@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 1100px;
+    margin: 100px auto;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.left-div {
+    width: 25%;
+    padding: 20px;
+    background: #ffffff;
+    z-index: 1;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.form-label {
+    font-weight: bold;
+    color: #41207a;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px 0;
+    margin: 10px 0;
+    border: 1px solid #41207a;
+    border-radius: 5px;
+    padding-left: 8px;
+}
+
+.form-button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.form-button2 {
+    background-color: #41207a;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.right-div {
+    width: 75%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1.2s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.footer {
+    font-size: 9.5px;
+}
